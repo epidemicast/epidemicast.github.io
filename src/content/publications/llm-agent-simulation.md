@@ -18,7 +18,7 @@ summary: "An extension of the simulation sandbox in which large language models 
 tags: ["LLM agents", "behaviour", "simulation"]
 featured: null
 links:
-  paper: null
+  paper: "https://dl.acm.org/doi/10.1145/3770855.3818983"
   code: null
   data: null
   demo: null

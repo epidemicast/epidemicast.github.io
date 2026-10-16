@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PublicationList from '../components/PublicationList.astro';
 import ResearchGraphic from '../components/ResearchGraphic.astro';
 
-const publications = (await getCollection('publications')).sort((a, b) => {
+const publications = (await getCollection('publications')).filter((publication) => !publication.data.hidden).sort((a, b) => {
   const featuredA = a.data.featured ?? 99;
   const featuredB = b.data.featured ?? 99;
   return featuredA - featuredB || b.data.year - a.data.year || a.data.title.localeCompare(b.data.title);

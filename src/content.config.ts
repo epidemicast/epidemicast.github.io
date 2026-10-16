@@ -22,6 +22,7 @@ const publications = defineCollection({
     summary: z.string(),
     tags: z.array(z.string()).default([]),
     featured: z.number().int().min(1).max(10).nullable().default(null),
+    hidden: z.boolean().default(false),
     links: publicationLinks,
   }),
 });

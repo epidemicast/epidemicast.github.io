@@ -26,6 +26,7 @@ and deployment → Source** to **GitHub Actions**.
 ## Update content
 
 - Publications: add or edit a Markdown file in `src/content/publications/`.
+- To temporarily remove a publication from the website without deleting its source file, set `hidden: true` in its frontmatter.
 - People: edit `src/data/people.json`.
 - Talks and events: edit `src/data/talks.json`.
 - Page-level copy and partner names: edit `src/pages/index.astro`.

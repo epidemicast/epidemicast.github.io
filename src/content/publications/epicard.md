@@ -13,6 +13,7 @@ status: "submitted"
 summary: "A dual-branch epidemic forecasting framework that recovers case-level semantics without relying on a hand-specified graph prior."
 tags: ["graph-prior-free", "case semantics", "forecasting"]
 featured: null
+hidden: true
 links:
   paper: null
   code: null
