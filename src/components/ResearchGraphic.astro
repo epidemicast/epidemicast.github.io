@@ -1,0 +1,103 @@
+<figure class="research-graphic" aria-labelledby="research-graphic-title research-graphic-desc">
+  <svg viewBox="0 0 760 560" role="img">
+    <title id="research-graphic-title">From incomplete observations to fairer forecasts</title>
+    <desc id="research-graphic-desc">Mobility, demographic, case, and genomic observations feed an AI forecasting model. A simulation ground truth and fairness evaluation loop help identify and correct bias.</desc>
+    <defs>
+      <linearGradient id="panel-wash" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#e3ece6" />
+        <stop offset="1" stop-color="#f3efe5" />
+      </linearGradient>
+      <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#172421" flood-opacity=".08" />
+      </filter>
+      <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#006c67" />
+      </marker>
+    </defs>
+
+    <rect x="16" y="16" width="728" height="528" rx="28" fill="url(#panel-wash)" stroke="#172421" stroke-opacity=".12" />
+    <g opacity=".26" stroke="#006c67" fill="none">
+      <path d="M56 90H704M56 178H704M56 266H704M56 354H704M56 442H704" stroke-dasharray="2 12" />
+      <path d="M124 54V506M260 54V506M396 54V506M532 54V506M668 54V506" stroke-dasharray="2 12" />
+    </g>
+
+    <g class="graphic-streams" filter="url(#soft-shadow)">
+      <g transform="translate(62 75)">
+        <rect width="230" height="74" rx="16" fill="#fffdf7" stroke="#172421" stroke-opacity=".16" />
+        <circle cx="28" cy="27" r="8" fill="#006c67" />
+        <path d="M20 48c11-13 21-13 34 0" fill="none" stroke="#006c67" stroke-width="3" stroke-linecap="round" />
+        <text x="68" y="30">MOBILITY</text>
+        <text class="sub" x="68" y="49">movement & contact</text>
+      </g>
+      <g transform="translate(62 170)">
+        <rect width="230" height="74" rx="16" fill="#fffdf7" stroke="#172421" stroke-opacity=".16" />
+        <path d="M20 49h32M24 41V24h10v17M38 41V18h10v23" fill="none" stroke="#006c67" stroke-width="3" />
+        <text x="68" y="30">DEMOGRAPHICS</text>
+        <text class="sub" x="68" y="49">population context</text>
+      </g>
+      <g transform="translate(62 265)">
+        <rect width="230" height="74" rx="16" fill="#fffdf7" stroke="#172421" stroke-opacity=".16" />
+        <path d="M20 47l9-13 9 7 15-20" fill="none" stroke="#9e3d54" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        <circle cx="53" cy="21" r="4" fill="#9e3d54" />
+        <text x="68" y="30">CASES</text>
+        <text class="sub" x="68" y="49">testing & reporting</text>
+      </g>
+      <g transform="translate(62 360)">
+        <rect width="230" height="74" rx="16" fill="#fffdf7" stroke="#172421" stroke-opacity=".16" />
+        <path d="M22 20c24 7 5 24 30 31M52 20c-24 7-5 24-30 31M28 28h18M26 40h22" fill="none" stroke="#9e3d54" stroke-width="2.6" stroke-linecap="round" />
+        <text x="68" y="30">GENOMICS</text>
+        <text class="sub" x="68" y="49">pathogen evolution</text>
+      </g>
+    </g>
+
+    <g stroke="#006c67" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
+      <path d="M298 112C330 112 314 242 368 242" />
+      <path d="M298 207C330 207 326 250 368 250" />
+      <path d="M298 302C330 302 326 260 368 260" />
+      <path d="M298 397C330 397 314 268 368 268" />
+    </g>
+
+    <g transform="translate(370 187)" filter="url(#soft-shadow)">
+      <rect width="180" height="132" rx="24" fill="#006c67" />
+      <text class="inverse small-cap" x="24" y="35">THRUST 1</text>
+      <text class="inverse model" x="24" y="69">AI forecasting</text>
+      <text class="inverse model" x="24" y="93">models</text>
+      <path d="M25 111h130" stroke="#fffdf7" stroke-opacity=".36" />
+    </g>
+
+    <g transform="translate(306 410)">
+      <rect width="238" height="74" rx="18" fill="#172421" />
+      <text class="inverse small-cap" x="23" y="29">THRUST 2</text>
+      <text class="inverse label" x="23" y="53">SIMULATED GROUND TRUTH</text>
+    </g>
+    <path d="M426 409V329" stroke="#172421" stroke-width="2.5" stroke-dasharray="5 7" marker-end="url(#arrow)" />
+
+    <g transform="translate(586 187)" filter="url(#soft-shadow)">
+      <rect width="118" height="132" rx="24" fill="#9e3d54" />
+      <text class="inverse small-cap" x="20" y="35">THRUST 3</text>
+      <text class="inverse model" x="20" y="69">Measure.</text>
+      <text class="inverse model" x="20" y="93">Correct.</text>
+      <circle cx="91" cy="104" r="8" fill="#d9a441" />
+    </g>
+    <path d="M552 253H578" stroke="#9e3d54" stroke-width="3" marker-end="url(#arrow)" />
+    <path d="M644 329C644 384 580 453 554 453" fill="none" stroke="#9e3d54" stroke-width="2.5" stroke-dasharray="5 7" marker-end="url(#arrow)" />
+
+    <text class="caption" x="63" y="490">OBSERVABLE DATA</text>
+    <text class="caption" x="587" y="350">FAIRER DECISIONS</text>
+  </svg>
+  <figcaption>We compare biased observations with controlled ground truth to understand where forecasting systems fail—and how to improve them.</figcaption>
+</figure>
+
+<style>
+  .research-graphic { margin: 0; }
+  svg { display: block; width: 100%; height: auto; }
+  text { fill: #172421; font-family: var(--font-sans); font-size: 12px; font-weight: 750; letter-spacing: .06em; }
+  text.sub { font-size: 10px; font-weight: 520; letter-spacing: 0; fill: #5b6965; }
+  text.inverse { fill: #fffdf7; }
+  text.small-cap { font-size: 10px; letter-spacing: .16em; }
+  text.model { font-family: var(--font-serif); font-size: 23px; font-weight: 520; letter-spacing: -.02em; }
+  text.label { font-size: 11px; letter-spacing: .08em; }
+  text.caption { font-size: 9px; letter-spacing: .16em; fill: #5b6965; }
+  figcaption { max-width: 42rem; margin: 1rem auto 0; color: var(--muted); font-size: .84rem; line-height: 1.55; text-align: center; }
+  @media (max-width: 520px) { figcaption { text-align: left; } }
+</style>

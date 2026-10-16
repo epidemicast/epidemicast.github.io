@@ -1,0 +1,102 @@
+[
+  {
+    "id": "flora-salim",
+    "name": "Flora Salim",
+    "initials": "FS",
+    "group": "lead",
+    "role": "Australian Principal Investigator",
+    "expertise": "AI, time series and spatiotemporal forecasting",
+    "affiliation": "UNSW Sydney",
+    "profile": null
+  },
+  {
+    "id": "andreas-zufle",
+    "name": "Andreas Züfle",
+    "initials": "AZ",
+    "group": "lead",
+    "role": "US Principal Investigator",
+    "expertise": "Spatial and spatiotemporal data science",
+    "affiliation": "[Affiliation to confirm]",
+    "profile": null
+  },
+  {
+    "id": "taylor-anderson",
+    "name": "Taylor Anderson",
+    "initials": "TA",
+    "group": "investigator",
+    "role": "Investigator",
+    "expertise": "Agent-based modelling and geosimulation",
+    "affiliation": "[Affiliation to confirm]",
+    "profile": null
+  },
+  {
+    "id": "david-heslop",
+    "name": "David Heslop",
+    "initials": "DH",
+    "group": "investigator",
+    "role": "Investigator",
+    "expertise": "Public health and integrated simulation",
+    "affiliation": "UNSW Sydney",
+    "profile": null
+  },
+  {
+    "id": "li-xiong",
+    "name": "Li Xiong",
+    "initials": "LX",
+    "group": "investigator",
+    "role": "Investigator",
+    "expertise": "Privacy-preserving spatiotemporal data",
+    "affiliation": "[Affiliation to confirm]",
+    "profile": null
+  },
+  {
+    "id": "matthew-scotch",
+    "name": "Matthew Scotch",
+    "initials": "MS",
+    "group": "investigator",
+    "role": "Investigator",
+    "expertise": "Genomic epidemiology and bioinformatics",
+    "affiliation": "Arizona State University",
+    "profile": null
+  },
+  {
+    "id": "raina-macintyre",
+    "name": "C. Raina MacIntyre",
+    "initials": "RM",
+    "group": "investigator",
+    "role": "Investigator",
+    "expertise": "Epidemiology and emerging infections",
+    "affiliation": "UNSW Sydney",
+    "profile": null
+  },
+  {
+    "id": "hye-young-paik",
+    "name": "Hye-Young Paik",
+    "initials": "HP",
+    "group": "investigator",
+    "role": "Investigator",
+    "expertise": "Intelligent systems and outbreak intelligence",
+    "affiliation": "UNSW Sydney",
+    "profile": null
+  },
+  {
+    "id": "kacper-sokol",
+    "name": "Kacper Sokol",
+    "initials": "KS",
+    "group": "investigator",
+    "role": "Investigator",
+    "expertise": "Explainable, transparent and fair AI",
+    "affiliation": "[Affiliation to confirm]",
+    "profile": null
+  },
+  {
+    "id": "hao-xue",
+    "name": "Hao Xue",
+    "initials": "HX",
+    "group": "investigator",
+    "role": "Investigator",
+    "expertise": "Deep learning, time series and mobility",
+    "affiliation": "UNSW Sydney",
+    "profile": null
+  }
+]

@@ -1,0 +1,115 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  publications: CollectionEntry<'publications'>[];
+}
+
+const { publications } = Astro.props;
+const linkLabels: Record<string, string> = {
+  paper: 'Paper',
+  code: 'Code',
+  data: 'Data',
+  demo: 'Demo',
+  project: 'Project page',
+};
+---
+
+<div class="publication-explorer" data-publication-explorer>
+  <div class="publication-tools" aria-label="Publication filters">
+    <div class="filter-set" role="group" aria-label="Filter by research thrust">
+      <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-chip" type="button" data-filter="1" aria-pressed="false">Thrust 1</button>
+      <button class="filter-chip" type="button" data-filter="2" aria-pressed="false">Thrust 2</button>
+      <button class="filter-chip" type="button" data-filter="3" aria-pressed="false">Thrust 3</button>
+    </div>
+    <p class="result-count" aria-live="polite"><span data-result-count>{publications.length}</span> research outputs</p>
+  </div>
+
+  <div class="publication-list">
+    {publications.map((publication) => {
+      const { title, authors, thrust, year, venue, status, summary, tags, links } = publication.data;
+      const availableLinks = Object.entries(links).filter((entry): entry is [string, string] => Boolean(entry[1]));
+      return (
+        <article class="publication-card" data-publication data-thrust={String(thrust)}>
+          <div class="publication-index" aria-hidden="true">T{thrust}</div>
+          <div class="publication-main">
+            <div class="publication-meta">
+              <span>{year}</span>
+              <span>{venue}</span>
+              <span class={`status status-${status}`}>{status}</span>
+            </div>
+            <h3>{title}</h3>
+            <p class="authors">{authors.join(', ')}</p>
+            <p class="publication-summary">{summary}</p>
+            <ul class="tag-list" aria-label="Topics">
+              {tags.map((tag) => <li>{tag}</li>)}
+            </ul>
+          </div>
+          <div class="publication-links" aria-label={`Links for ${title}`}>
+            {availableLinks.length > 0 ? availableLinks.map(([kind, url]) => (
+              <a href={url} target="_blank" rel="noreferrer">
+                {linkLabels[kind] ?? kind}<span aria-hidden="true"> ↗</span>
+              </a>
+            )) : <span class="links-pending">Links forthcoming</span>}
+          </div>
+        </article>
+      );
+    })}
+  </div>
+
+  <button class="show-all-button" type="button" data-show-all aria-expanded="false">
+    <span data-show-label>Show all publications</span>
+    <span aria-hidden="true">↓</span>
+  </button>
+</div>
+
+<script>
+  const explorer = document.querySelector<HTMLElement>('[data-publication-explorer]');
+
+  if (explorer) {
+    const cards = Array.from(explorer.querySelectorAll<HTMLElement>('[data-publication]'));
+    const filterButtons = Array.from(explorer.querySelectorAll<HTMLButtonElement>('[data-filter]'));
+    const showAll = explorer.querySelector<HTMLButtonElement>('[data-show-all]');
+    const showLabel = explorer.querySelector<HTMLElement>('[data-show-label]');
+    const resultCount = explorer.querySelector<HTMLElement>('[data-result-count]');
+    let activeFilter = 'all';
+    let expanded = false;
+
+    const render = () => {
+      const matches = cards.filter((card) => activeFilter === 'all' || card.dataset.thrust === activeFilter);
+
+      cards.forEach((card) => {
+        const matchIndex = matches.indexOf(card);
+        card.hidden = matchIndex === -1 || (!expanded && matchIndex >= 6);
+      });
+
+      if (resultCount) resultCount.textContent = String(matches.length);
+      if (showAll) {
+        showAll.hidden = matches.length <= 6;
+        showAll.setAttribute('aria-expanded', String(expanded));
+      }
+      if (showLabel) showLabel.textContent = expanded ? 'Show fewer publications' : 'Show all publications';
+    };
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        activeFilter = button.dataset.filter ?? 'all';
+        expanded = false;
+        filterButtons.forEach((candidate) => {
+          const isActive = candidate === button;
+          candidate.classList.toggle('is-active', isActive);
+          candidate.setAttribute('aria-pressed', String(isActive));
+        });
+        render();
+      });
+    });
+
+    showAll?.addEventListener('click', () => {
+      expanded = !expanded;
+      render();
+    });
+
+    render();
+  }
+</script>
