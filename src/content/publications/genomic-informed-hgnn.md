@@ -18,8 +18,8 @@ tags: ["heterogeneous graphs", "genomics", "avian influenza"]
 featured: 1
 links:
   paper: "https://arxiv.org/abs/2505.22692"
-  code: null
-  data: null
+  code: "https://github.com/cruiseresearchgroup/BLUE"
+  data: "https://huggingface.co/datasets/CRUISEResearchGroup/Avian-US_dataset"
   demo: null
   project: null
 ---

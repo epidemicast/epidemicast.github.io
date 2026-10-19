@@ -310,6 +310,9 @@ img, svg { max-width: 100%; }
 .resource-card h3 { max-width: 500px; margin: auto 0 1rem; font-family: var(--font-serif); font-size: clamp(2rem, 3vw, 3.1rem); font-weight: 500; line-height: 1.05; }
 .resource-card p { max-width: 550px; margin: 0 0 1.5rem; color: var(--muted); }
 .resource-status { width: max-content; padding-top: .5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .66rem; letter-spacing: .06em; text-transform: uppercase; }
+.resource-links { display: flex; flex-wrap: wrap; gap: .7rem 1rem; padding-top: .5rem; border-top: 1px solid var(--line); }
+.resource-links a { color: var(--ink); font-size: .68rem; font-weight: 760; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
+.resource-links a:hover { color: var(--teal); }
 
 .talks { color: white; background: var(--berry); }
 .talks .eyebrow { color: #f0b8c5; }

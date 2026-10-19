@@ -17,7 +17,7 @@ tags: ["large-scale simulation", "human mobility", "digital twins"]
 featured: null
 links:
   paper: "https://dl.acm.org/doi/10.1145/3748636.3762791"
-  code: null
+  code: "https://github.com/RuochenKong/Compartmental-Infectious-Disease-Simulation"
   data: null
   demo: null
   project: null

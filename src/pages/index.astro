@@ -42,10 +42,15 @@ const thrusts = [
 ];
 
 const resourceCards = [
-  { kind: 'Dataset & benchmark', title: 'Controlled-bias infectious-disease datasets', text: 'Ground-truth and observable-data pairs for evaluating how collection bias propagates through predictive models.' },
-  { kind: 'Simulation', title: 'EpiScale', text: 'Large-scale, mobility-informed infrastructure for simulating infectious-disease spread across realistic urban populations.' },
-  { kind: 'Model family', title: 'Heterogeneous outbreak forecasting', text: 'Graph-learning methods that connect ecological, mobility, genomic and epidemiological signals.' },
-  { kind: 'Dataset', title: 'Urban Anomalies', text: 'Simulated human mobility with controlled, labelled anomalies for reproducible stress-testing.' },
+  { kind: 'Dataset & benchmark', title: 'Controlled-bias infectious-disease datasets', text: 'Ground-truth and observable-data pairs for evaluating how collection bias propagates through predictive models.', links: [] },
+  { kind: 'Simulation', title: 'EpiScale', text: 'Large-scale, mobility-informed infrastructure for simulating infectious-disease spread across realistic urban populations.', links: [
+    { label: 'GitHub', url: 'https://github.com/RuochenKong/Compartmental-Infectious-Disease-Simulation' },
+  ] },
+  { kind: 'Model family', title: 'Heterogeneous outbreak forecasting', text: 'Graph-learning methods that connect ecological, mobility, genomic and epidemiological signals.', links: [
+    { label: 'GitHub', url: 'https://github.com/cruiseresearchgroup/BLUE' },
+    { label: 'Hugging Face', url: 'https://huggingface.co/datasets/CRUISEResearchGroup/Avian-US_dataset' },
+  ] },
+  { kind: 'Dataset', title: 'Urban Anomalies', text: 'Simulated human mobility with controlled, labelled anomalies for reproducible stress-testing.', links: [] },
 ];
 
 const partners = ['CSIRO', 'U.S. National Science Foundation', 'UNSW Sydney', 'George Mason University', 'Emory University', 'Arizona State University'];
@@ -194,7 +199,11 @@ const description = 'An Australia–United States research collaboration develop
               <span class="resource-index" aria-hidden="true">0{index + 1}</span>
               <h3>{resource.title}</h3>
               <p>{resource.text}</p>
-              <span class="resource-status">Repository details forthcoming</span>
+              {resource.links.length > 0 ? (
+                <div class="resource-links" aria-label={`Links for ${resource.title}`}>
+                  {resource.links.map((link) => <a href={link.url} target="_blank" rel="noreferrer">{link.label}<span aria-hidden="true"> ↗</span></a>)}
+                </div>
+              ) : <span class="resource-status">Repository details forthcoming</span>}
             </article>
           ))}
         </div>
