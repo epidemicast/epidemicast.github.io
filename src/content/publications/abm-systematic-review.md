@@ -1,5 +1,5 @@
 ---
-title: "All Models Are Wrong, but Can They Be Useful? Lessons from COVID-19 Agent-Based Models"
+title: "All Models Are Wrong, but Can They Be Useful? Lessons from COVID-19 Agent-Based Models: A Systematic Review"
 authors:
   - "E. Von Hoene"
   - "S. Von Hoene"
@@ -21,7 +21,7 @@ summary: "A systematic review identifying when COVID-19 agent-based models were 
 tags: ["systematic review", "agent-based models", "COVID-19"]
 featured: null
 links:
-  paper: null
+  paper: "https://www.jasss.org/29/1/7.html"
   code: null
   data: null
   demo: null

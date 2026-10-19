@@ -14,7 +14,7 @@ summary: "An assessment of whether synthetic population methods remain useful wh
 tags: ["synthetic populations", "transferability", "public health"]
 featured: null
 links:
-  paper: null
+  paper: "https://doi.org/10.1109/WSC68292.2025.11338931"
   code: null
   data: null
   demo: null

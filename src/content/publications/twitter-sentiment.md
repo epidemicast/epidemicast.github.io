@@ -1,5 +1,5 @@
 ---
-title: "Towards Using Twitter Sentiment for Infectious Disease Detection"
+title: "Towards Using Tweet Sentiment for Infectious Disease Detection"
 authors:
   - "J. Stassinos"
   - "T. Anderson"
@@ -12,7 +12,7 @@ summary: "An evaluation of social-media sentiment as a complementary open-data s
 tags: ["social media", "sentiment", "early detection"]
 featured: null
 links:
-  paper: null
+  paper: "https://pubmed.ncbi.nlm.nih.gov/40455757/"
   code: null
   data: null
   demo: null

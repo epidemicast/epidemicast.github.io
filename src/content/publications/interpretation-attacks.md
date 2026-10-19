@@ -13,7 +13,7 @@ summary: "A study of attacks on model interpretations and corresponding defences
 tags: ["explainability", "robustness", "electronic health records"]
 featured: null
 links:
-  paper: null
+  paper: "https://doi.org/10.1007/978-3-031-43418-1_27"
   code: null
   data: null
   demo: null

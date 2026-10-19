@@ -16,7 +16,7 @@ summary: "A scalable engine for simulating infectious-disease dynamics across re
 tags: ["large-scale simulation", "human mobility", "digital twins"]
 featured: null
 links:
-  paper: null
+  paper: "https://dl.acm.org/doi/10.1145/3748636.3762791"
   code: null
   data: null
   demo: null

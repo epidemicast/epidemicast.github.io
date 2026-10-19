@@ -17,7 +17,7 @@ summary: "A constrained large-language-model approach for producing plausible sy
 tags: ["LLMs", "synthetic mobility", "trajectory generation"]
 featured: null
 links:
-  paper: null
+  paper: "https://doi.org/10.1109/MDM65600.2025.00023"
   code: null
   data: null
   demo: null

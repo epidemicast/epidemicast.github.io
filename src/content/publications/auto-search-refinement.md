@@ -14,7 +14,7 @@ summary: "An automated search-and-refinement framework for identifying and mitig
 tags: ["gender bias", "LLMs", "mitigation"]
 featured: null
 links:
-  paper: null
+  paper: "https://papers.nips.cc/paper_files/paper/2025/hash/8155d7b7dc6b11e89494cf1e8e201d26-Abstract-Conference.html"
   code: null
   data: null
   demo: null
