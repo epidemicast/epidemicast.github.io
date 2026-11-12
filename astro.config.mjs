@@ -1,8 +1,8 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://cruiseresearchgroup.github.io',
-  base: '/infectious-disease-bias',
+  site: 'https://epidemicast.github.io',
+  base: '/',
   output: 'static',
   compressHTML: true,
 });

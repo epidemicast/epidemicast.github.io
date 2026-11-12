@@ -2,7 +2,13 @@
 
 An English, single-page academic project website inspired by the editorial clarity of the Stanford STAR project site. The implementation uses Astro content collections so project developers can maintain publications without editing page components.
 
-Current production site: <https://cruiseresearchgroup.github.io/infectious-disease-bias/>
+Current production site: <https://epidemicast.github.io/>
+
+Upstream project repository: <https://github.com/cruiseresearchgroup/infectious-disease-bias>
+
+This repository is the Epidemicast deployment fork. It publishes the website at
+the organization-level GitHub Pages address while retaining the CRUISE repository
+as its upstream source.
 
 ## Run locally
 
