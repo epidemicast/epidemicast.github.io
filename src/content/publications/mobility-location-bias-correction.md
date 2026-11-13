@@ -19,7 +19,7 @@ summary: "A human-mobility-informed approach to recovering missing locations and
 tags: ["human mobility", "location inference", "bias correction"]
 featured: 1
 visual:
-  src: "publications/featured/mobility-location-bias.webp"
+  src: "publications/featured/mobility-transition-matrix.webp"
   alt: "Three panels showing Louisiana location patterns, candidate transition maps, and inferred spatial relationships."
   caption: "Transition-matrix visualisation for inferring missing locations and correcting spatial reporting bias."
 links:
