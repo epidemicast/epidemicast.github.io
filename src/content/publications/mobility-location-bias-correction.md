@@ -20,8 +20,8 @@ tags: ["human mobility", "location inference", "bias correction"]
 featured: 1
 visual:
   src: "publications/featured/mobility-location-bias.webp"
-  alt: "A problem definition showing spatial disease spread, ground-truth transmission, and location-biased observed case data."
-  caption: "Figure 1 — Ground-truth transmission and the incomplete, location-biased observations available to the model."
+  alt: "Three panels showing Louisiana location patterns, candidate transition maps, and inferred spatial relationships."
+  caption: "Transition-matrix visualisation for inferring missing locations and correcting spatial reporting bias."
 links:
   paper: null
   code: null
