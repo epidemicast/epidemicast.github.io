@@ -16,6 +16,10 @@ status: "published"
 summary: "A probabilistic approach to estimating missing genetic distances when pathogen sequencing is sparse or unevenly sampled across locations."
 tags: ["phylogenetics", "imputation", "pathogen models"]
 featured: 4
+visual:
+  src: "publications/featured/genetic-distance-imputation.webp"
+  alt: "Side-by-side U.S. maps comparing observed and predicted genetic distances between avian influenza case pairs."
+  caption: "Figure 4 — Observed and predicted genetic distances recover comparable spatial linkage patterns."
 links:
   paper: "https://arxiv.org/abs/2506.09076"
   code: null

@@ -18,6 +18,10 @@ status: "published"
 summary: "A reusable benchmark pairing complete simulated ground truth with observable datasets affected by controlled data-collection bias."
 tags: ["benchmark", "agent-based simulation", "data bias"]
 featured: 3
+visual:
+  src: "publications/featured/controlled-bias-simulation.webp"
+  alt: "A biased infectious-disease data simulator combining demographic, mobility, phylogenetic, and confirmed-case data."
+  caption: "Figure 1 — The simulator connects a synthetic population, contact networks, disease dynamics, and controlled data collection."
 links:
   paper: "https://doi.org/10.1145/3711896.3737401"
   code: null

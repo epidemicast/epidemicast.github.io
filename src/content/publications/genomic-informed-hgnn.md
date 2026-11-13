@@ -16,6 +16,10 @@ status: "accepted"
 summary: "A heterogeneous graph learning framework that brings ecological context, mobility, case histories, and pathogen genomics together for H5N1 outbreak forecasting."
 tags: ["heterogeneous graphs", "genomics", "avian influenza"]
 featured: 2
+visual:
+  src: "publications/featured/genomic-informed-hgnn.webp"
+  alt: "The BLUE architecture combining case-level genomic information with location-level spatial and ecological features for multi-step forecasting."
+  caption: "Figure 1 — BLUE fuses genomic, spatial, and ecological signals in a heterogeneous graph forecasting pipeline."
 links:
   paper: "https://arxiv.org/abs/2505.22692"
   code: "https://github.com/cruiseresearchgroup/BLUE"

@@ -10,6 +10,12 @@ const publicationLinks = z.object({
   project: z.url().nullable().default(null),
 });
 
+const publicationVisual = z.object({
+  src: z.string(),
+  alt: z.string(),
+  caption: z.string(),
+});
+
 const publications = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/publications' }),
   schema: z.object({
@@ -22,6 +28,7 @@ const publications = defineCollection({
     summary: z.string(),
     tags: z.array(z.string()).default([]),
     featured: z.number().int().min(1).max(10).nullable().default(null),
+    visual: publicationVisual.nullable().default(null),
     hidden: z.boolean().default(false),
     links: publicationLinks,
   }),

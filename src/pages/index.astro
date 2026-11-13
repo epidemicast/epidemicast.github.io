@@ -247,12 +247,25 @@ const description = 'An Australia–United States research collaboration develop
         <div class="featured-grid">
           {featured.map((publication, index) => (
             <article class:list={['featured-card', { 'featured-card-lead': index === 0 }, 'reveal']}>
-              <div class="featured-meta"><span>Thrust {publication.data.thrust}</span><span>{publication.data.year}</span></div>
-              <h3>{publication.data.title}</h3>
-              <p>{publication.data.summary}</p>
-              <div class="featured-footer">
-                <span>{publication.data.venue}</span>
-                {publication.data.links.paper && <a href={publication.data.links.paper} target="_blank" rel="noreferrer" aria-label={`Open paper: ${publication.data.title}`}>Open paper ↗</a>}
+              {publication.data.visual && (
+                <figure class="featured-visual">
+                  <img
+                    src={assetPath(publication.data.visual.src)}
+                    alt={publication.data.visual.alt}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption>{publication.data.visual.caption}</figcaption>
+                </figure>
+              )}
+              <div class="featured-copy">
+                <div class="featured-meta"><span>Thrust {publication.data.thrust}</span><span>{publication.data.year}</span></div>
+                <h3>{publication.data.title}</h3>
+                <p>{publication.data.summary}</p>
+                <div class="featured-footer">
+                  <span>{publication.data.venue}</span>
+                  {publication.data.links.paper && <a href={publication.data.links.paper} target="_blank" rel="noreferrer" aria-label={`Open paper: ${publication.data.title}`}>Open paper ↗</a>}
+                </div>
               </div>
             </article>
           ))}
